@@ -1,1 +1,3 @@
-"<?php echo 'Bienvenue dans l\'application de gestion d\'‚cole'; ?>" 
+<?php
+header("Location: home.php");
+exit;

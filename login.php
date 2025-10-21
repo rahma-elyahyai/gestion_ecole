@@ -8,6 +8,25 @@ include("public/nav_barre.php");
   <div class="login-card">
     <!-- Left image -->
     <div class="login-image"></div>
+    <?php
+    session_start();
+        if ($_SERVER["REQUEST_METHOD"] === "POST") {
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+
+            if ($email === "prof@gmail.com" && $password === "prof123") {
+                header("Location: IHM/prof/affichage.php");
+                exit;
+            } 
+            elseif ($email === "student@gmail.com" && $password === "student123") {
+                header("Location: IHM/etudiant/affichage.php");
+                exit;
+            } 
+            else {
+                echo "<div class='alert alert-danger text-center mt-3'>Email ou mot de passe incorrect ❌</div>";
+            }
+        }
+    ?>
 
     <!-- Right form -->
     <div class="login-form">
@@ -23,18 +42,6 @@ include("public/nav_barre.php");
         <button type="submit">Se connecter</button>
       </form>
 
-      <?php
-      if ($_SERVER["REQUEST_METHOD"] === "POST") {
-          $email = $_POST['email'];
-          $password = $_POST['password'];
-
-          if ($email === "admin@gmail.com" && $password === "1234") {
-              echo "<div class='alert alert-success'>Connexion réussie ✅</div>";
-          } else {
-              echo "<div class='alert alert-error'>Email ou mot de passe incorrect ❌</div>";
-          }
-      }
-      ?>
     </div>
   </div>
 </section>

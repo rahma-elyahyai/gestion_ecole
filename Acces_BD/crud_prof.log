@@ -1,0 +1,16 @@
+2025-10-21 23:51:26 - SELECT_ALL: {"count":9}
+2025-10-22 00:01:15 - SELECT_ALL: {"count":9}
+2025-10-22 00:02:03 - SELECT_ALL: {"count":9}
+2025-10-22 00:10:52 - SELECT_ALL: {"count":9}
+2025-10-22 00:11:11 - INSERT_ATTEMPT: {"code":"1234","nom":"ouahabi","prenom":"Manar","email":"ouahabi.maanr@gmail.com","langues":"Arabe, Fran\u00e7ais","specialite":"Physique"}
+2025-10-22 00:11:11 - INSERT_RESULT: {"success":true,"insert_id":11,"error":""}
+2025-10-22 00:11:11 - SELECT_ALL: {"count":10}
+2025-10-22 00:17:45 - INSERT_ATTEMPT: {"code":"1234","nom":"Dupont","prenom":"Manar","email":"marie.dupont@example.com","langues":"Arabe, Fran\u00e7ais","specialite":"Physique"}
+2025-10-22 00:17:45 - INSERT_RESULT: {"success":true,"insert_id":12,"error":""}
+2025-10-22 00:17:45 - SELECT_ALL: {"count":11}
+2025-10-22 00:17:51 - SELECT_ALL: {"count":11}
+2025-10-22 00:17:54 - GET: {"id":12}
+2025-10-22 00:17:58 - GET: {"id":12}
+2025-10-22 00:17:58 - UPDATE: {"id":12,"affected_rows":1,"error":""}
+2025-10-22 00:17:58 - SELECT_ALL: {"count":11}
+2025-10-22 00:18:02 - SELECT_ALL: {"count":11}

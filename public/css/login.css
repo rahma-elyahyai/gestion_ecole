@@ -1,0 +1,112 @@
+.login-section {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  padding: 40px 0;
+}
+
+.login-card {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  width: 100%;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Left image --- */
+.login-card .login-image {
+  flex: 1;
+  min-width: 300px;
+  background: url('../imgs/login.png') no-repeat center center;
+  background-size: cover;}
+
+/* --- Right form --- */
+.login-card .login-form {
+  flex: 1;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-form h2 {
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* --- Form fields --- */
+.login-form label {
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.login-form input:focus {
+  border-color: #4ca1af;
+  box-shadow: 0 0 5px rgba(76, 161, 175, 0.5);
+  outline: none;
+}
+
+.login-form button {
+  background: linear-gradient(135deg, #799dc2, #16456c);
+  border: none;
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background: linear-gradient(135deg, #16456c, #799dc2);
+  transform: translateY(-2px);
+}
+
+.alert {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.alert-success {
+  background: #d4edda;
+  color: #155724;
+}
+
+.alert-error {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .login-card {
+    flex-direction: column;
+  }
+  .login-card .login-image {
+    height: 220px;
+  }
+  .login-card .login-form {
+    padding: 30px 25px;
+  }
+}

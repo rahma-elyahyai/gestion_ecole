@@ -6,8 +6,16 @@ $phrases = [
 ];
 $phrase = $phrases[array_rand($phrases)];
 ?>
-<footer>
-    <p><?= $phrase ?></p>
+<footer class="modern-footer">
+  <div class="container text-center">
+    <p class="footer-phrase"><?= $phrase ?></p>
+    <div class="footer-links">
+      <a href="#">À propos</a>
+      <a href="#">Contact</a>
+      <a href="#">Confidentialité</a>
+    </div>
+    <p class="footer-copy">&copy; <?= date('Y') ?> Mon École. Tous droits réservés.</p>
+  </div>
 </footer>
 </body>
 </html>
